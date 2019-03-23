@@ -7,33 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
-<body>
-    <div>
-        <section>
+<body class="">
+    <div class="row">
+        <section class="col-sm- bg-dark">
             <figure>
-                <img src="./img/androidelegante.jpg" alt="">
+                <img src="./img/foto.jpg" alt="" class="roundimage">
                 <figcaption>
-                    <h1>Hi, I'm Sebastian Alvarez Z.</h1>
+                    <h1>Sebastian Alvarez Z.</h1>
                 </figcaption>
             </figure>
-            <nav>
-                <a href="">Acerca de mi</a>
+            <nav class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#content-about-me" role="tab" aria-controls="v-pills-home" aria-selected="true">Acerca de mi</a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#content-laboral-experience" role="tab" aria-controls="v-pills-profile" aria-selected="false">Experencia Laboral</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
             </nav>
+
         </section>
-        <section>
-            <main>
-                <article>
+        <section class="col-sm-8">
+            <main class=" p-5 tab-content" id="v-pills-tabContent">
+                <article class="tab-pane fade show active" id="content-about-me" role="tabpanel" aria-labelledby="v-pills-home-tab">
                     <h3>Acerca de mi:</h3>
-                    <p>Soy estudiante de ingenieria de sistemas de la Universidad de Medellín , actualmente me encuentro 
-                    cursando el noveno semestre.</p>
+                    <p>Me considero una persona responsable, con necesidad de alcanzar objetivos a nivel personal y profesional, siendo consciente de los recursos que tengo a mi alcance para ello. Me gusta ser parte de la transformación tecnológica en las empresas, comunidades y procesos aportando mi conocimiento para soluciones viables que mejoren el rendimiento de los mismos.</p>
                 </article>
-                <article>
+                <article class="tab-pane fade" id="content-laboral-experience" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                     <h3>Mas acerca de mi:</h3>
                     <p>Me apasiona el desarrollo de software, pues ejerciendo dicha profesión siento que tengo la capacidad de hacer 
                        infinidad de cosas que me permitan brindar soluciones y/o facilitar procesos.</p>
-                </article>
-                <article>
+                </article >
+                <article class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                     <div>
                             <h3>Experencia laboral</h3>
 
@@ -69,7 +75,7 @@
 
                     
                 </article>
-                <article>
+                <article class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
                    <h3>Contacto:</h3>
                     <p>Celular: 3116691431</p>
                     <p>Correo electr.: alvarez17.sebastian@gmail.com</p>
@@ -77,5 +83,9 @@
             </main>
         </section>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
