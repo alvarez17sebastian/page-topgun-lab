@@ -13,33 +13,37 @@
 </head>
 <body class="h-100">
     <div class="d-flex h-100">
-        <section class="d-flex flex-column justify-content-center text-white aside">
+        <aside id="section1" class=" d-flex flex-column justify-content-center text-white ">
             <figure>
                 <img src="./img/foto.jpg" alt="" class="mb-3 rounded-circle roundimage">
                 <figcaption class="border-bottom border-danger pb-2">
-                    <p class="h3 font-weight-bolder mb-1">Sebastian Alvarez Z.</p>
+                    <p class="h4 font-weight-bolder mb-1">Sebastian Alvarez Z.</p>
                 </figcaption>
             </figure>
             <nav class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#content-about-me" role="tab" aria-controls="v-pills-home" aria-selected="true">Acerca de mi</a>
                     <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#content-laboral-experience" role="tab" aria-controls="v-pills-profile" aria-selected="false">Experencia Laboral</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#content-focused-on" role="tab" aria-controls="v-pills-messages" aria-selected="false">Estoy enfocado en</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Contacto</a>
             </nav>
 
-        </section>
-        <section class="col-sm-8">
-            <main class=" p-5 tab-content" id="v-pills-tabContent">
+        </aside>
+
+            <main class="tab-content d-flex flex-column justify-content-center">
                 <article class="tab-pane fade show active" id="content-about-me" role="tabpanel" aria-labelledby="v-pills-home-tab">
                     <h3>Acerca de mi:</h3>
                     <p>Me considero una persona responsable, con necesidad de alcanzar objetivos a nivel personal y profesional, siendo consciente de los recursos que tengo a mi alcance para ello. Me gusta ser parte de la transformación tecnológica en las empresas, comunidades y procesos aportando mi conocimiento para soluciones viables que mejoren el rendimiento de los mismos.</p>
                 </article>
-                <article class="tab-pane fade" id="content-laboral-experience" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                    <h3>Mas acerca de mi:</h3>
-                    <p>Me apasiona el desarrollo de software, pues ejerciendo dicha profesión siento que tengo la capacidad de hacer 
-                       infinidad de cosas que me permitan brindar soluciones y/o facilitar procesos.</p>
+                <article class="tab-pane fade" id="content-focused-on" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <h3>Estoy enfocado en:</h3>
+                    <ul>
+                            <li>Desarrollo de aplicaciones moviles android en Kotlin.</li>
+                            <li>Trabajando de manera independiente en el desarrollado de aplicaciones moviles.</li>
+                            <li>Aprender desarrollo web.</li>
+                            <li>Realizar ejercicio al menos 3 o 4 veces a la semana.</li>
+                          </ul>
                 </article >
-                <article class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <article class="tab-pane fade" id="content-laboral-experience" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                     <div>
                             <h3>Experencia laboral</h3>
 
@@ -67,7 +71,7 @@
                           Creativos digitales en una empresa de desarrollo de software que recien empieza, cuenta con 3 años de haber iniciado,
                           esta empresa es de un profesor de mi universidad que en un momento cualquiera me dio la posibilidad de trabajar como 
                           desarrollador Android en su empresa, y acepte.
-                          En Creativos Digitales trabje aproximadamente 5 meses, y es en una de las empresas que mas me ha tocado afrontar
+                          En Creativos Digitales trabaje aproximadamente 5 meses, y es en una de las empresas que mas me ha tocado afrontar
                           retos como desarrollador android.
                        </p>
                     </div>
@@ -81,7 +85,6 @@
                     <p>Correo electr.: alvarez17.sebastian@gmail.com</p>
                 </article>
             </main>
-        </section>
     </div>
 
     <script
